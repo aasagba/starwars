@@ -13,7 +13,8 @@ export class SwapiService {
 
   constructor(private httpClient: HttpClient){}
 
-  public getStarWarsPeople(searchParams: ISearchParams): Observable<IPeopleResponse | Error> {
+  public getStarWarsPeople(searchParams?: ISearchParams):
+    Observable<IPeopleResponse | Error> {
 
     let params: HttpParams = new HttpParams();
 

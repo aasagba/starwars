@@ -1,0 +1,862 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchPageComponent search should update datagrid with search results 1`] = `
+<div
+  id="root4"
+>
+  <form
+    class="clr-form ng-untouched ng-pristine ng-valid"
+    novalidate=""
+  >
+    <div
+      class="clr-row"
+    >
+      <div
+        class="clr-col-12"
+      >
+        <div
+          class="search-wrapper"
+        >
+          <div
+            class="logo"
+          />
+          <clr-input-container
+            class="search clr-form-control"
+          >
+            
+            <div
+              class="clr-control-container clr-input"
+            >
+              <div
+                class="clr-input-wrapper"
+              >
+                <input
+                  aria-describedby="search-helper"
+                  class="clr-input ng-untouched ng-pristine ng-valid"
+                  clrinput=""
+                  formcontrolname="search"
+                  id="search"
+                  name="search"
+                  placeholder="Search People"
+                  type="search"
+                />
+                
+              </div>
+              
+              
+              
+            </div>
+          </clr-input-container>
+        </div>
+      </div>
+    </div>
+  </form>
+  <clr-datagrid
+    class="datagrid-host"
+  >
+    <div
+      class="datagrid"
+    >
+      <div
+        class="datagrid-table-wrapper"
+      >
+        <div
+          class="datagrid-table"
+          role="grid"
+          tabindex="-1"
+        >
+          <div
+            class="datagrid-header"
+            role="rowgroup"
+          >
+            <div
+              class="datagrid-row"
+              role="row"
+            >
+              <div
+                class="datagrid-row-master datagrid-row-flex"
+              >
+                <div
+                  class="datagrid-row-sticky"
+                />
+                <div
+                  class="datagrid-row-scrollable"
+                >
+                  
+                  
+                  
+                  
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Name
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Height
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Mass
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Hair Colour
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Eye Colour
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Birth Year
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Gender
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Homeworld
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Films
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Species
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Vehicles
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                  <clr-dg-column
+                    aria-sort="none"
+                    class="datagrid-column"
+                    role="columnheader"
+                    style="width: 0px;"
+                  >
+                    <div
+                      class="datagrid-column-flex"
+                    >
+                      
+                      
+                      
+                      
+                      <span
+                        class="datagrid-column-title"
+                      >
+                        
+                        Starships
+                        
+                      </span>
+                      <clr-dg-column-separator
+                        class="datagrid-column-separator"
+                      >
+                        <div
+                          aria-hidden="true"
+                          class="datagrid-column-handle drag-handle draggable"
+                          clrdraggable=""
+                        />
+                        <div
+                          class="datagrid-column-resize-tracker"
+                        />
+                      </clr-dg-column-separator>
+                    </div>
+                  </clr-dg-column>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <clr-dg-row
+            aria-owns="clr-dg-row7"
+            class="datagrid-row"
+            role="rowgroup"
+          >
+            
+            
+            
+            <div
+              class="datagrid-row-master datagrid-row-flex"
+              id="clr-dg-row7"
+              role="row"
+            >
+              <div
+                class="datagrid-row-sticky"
+              >
+                
+              </div>
+              <div
+                class="datagrid-row-scrollable"
+              >
+                <div
+                  class="datagrid-scrolling-cells"
+                >
+                  
+                  
+                  
+                  
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    Luke Skywalker
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    172
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    blond
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+              
+            </div>
+            
+            
+            
+            
+          </clr-dg-row>
+          
+          <clr-dg-row
+            aria-owns="clr-dg-row8"
+            class="datagrid-row"
+            role="rowgroup"
+          >
+            
+            
+            
+            <div
+              class="datagrid-row-master datagrid-row-flex"
+              id="clr-dg-row8"
+              role="row"
+            >
+              <div
+                class="datagrid-row-sticky"
+              >
+                
+              </div>
+              <div
+                class="datagrid-row-scrollable"
+              >
+                <div
+                  class="datagrid-scrolling-cells"
+                >
+                  
+                  
+                  
+                  
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    Han Solo
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    182
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    brown
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                  <clr-dg-cell
+                    class="datagrid-cell"
+                    role="gridcell"
+                    style="width: 0px;"
+                  >
+                    
+                  </clr-dg-cell>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+              
+            </div>
+            
+            
+            
+            
+          </clr-dg-row>
+          
+          <clr-dg-placeholder
+            class="datagrid-placeholder-container"
+            hidden=""
+          >
+            <div
+              class="datagrid-placeholder"
+            >
+              
+              
+            </div>
+          </clr-dg-placeholder>
+          
+        </div>
+      </div>
+    </div>
+    <clr-dg-footer
+      class="datagrid-footer"
+    >
+      
+      
+      <div
+        class="datagrid-footer-description"
+      />
+      <clr-dg-pagination
+        class="pagination"
+      >
+        
+        <div
+          class="pagination-size"
+        >
+          <clr-dg-page-size>
+            Per page
+            <div
+              class="clr-select-wrapper"
+            >
+              <select
+                class="clr-page-size-select ng-untouched ng-pristine ng-valid"
+              >
+                
+                <option
+                  value="0: 10"
+                >
+                  10
+                </option>
+              </select>
+            </div>
+          </clr-dg-page-size>
+        </div>
+        <div
+          class="pagination-description"
+        >
+           1 - 10 of 0 People 
+        </div>
+        
+      </clr-dg-pagination>
+    </clr-dg-footer>
+    
+    <div
+      class="datagrid-calculation-table"
+    >
+      <div
+        class="datagrid-calculation-header"
+      >
+        
+      </div>
+      
+    </div>
+  </clr-datagrid>
+</div>
+`;

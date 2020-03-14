@@ -27,7 +27,9 @@ export class SearchPageComponent implements OnInit {
   }
 
   public search(): void {
-    const searchTerm: string = this.searchPageForm.controls.search.value;
+    const searchTerm: string =
+      this.searchPageForm.controls.search.value;
+
     this.facade.searchPeople({ searchTerm });
   }
 
@@ -38,11 +40,14 @@ export class SearchPageComponent implements OnInit {
   }
 
   refresh(state: ClrDatagridStateInterface) {
-    const searchTerm: string = this.searchPageForm.controls.search.value;
+    const searchTerm: string =
+      this.searchPageForm.controls.search.value;
 
     const searchParams: ISearchParams = {
       searchTerm,
-      page: state.page.current.toString()
+      page: state.page
+        ? state.page.current.toString()
+        : ''
     };
 
     this.facade.searchPeople(searchParams);
