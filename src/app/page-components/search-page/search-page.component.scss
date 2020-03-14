@@ -1,0 +1,27 @@
+:host {
+
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .clr-form {
+    .search {
+      margin-bottom: 34px;
+
+      ::ng-deep .clr-control-container {
+        align-self: center;
+
+        input {
+          width: 8rem;
+          color: black;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}

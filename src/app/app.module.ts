@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
+import { SearchPageModule } from './page-components/search-page/search-page.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { reducers, metaReducers } from './reducers';
     CommonModule,
     HttpClientModule,
     BrowserModule,
+    SearchPageModule,
     ClarityModule,
     BrowserAnimationsModule,
     ClarityModule,
