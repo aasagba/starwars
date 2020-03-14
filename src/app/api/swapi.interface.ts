@@ -24,3 +24,7 @@ export interface IPeople {
   vehicles: Array<string>
 }
 
+export interface ISearchParams {
+  searchTerm?: string
+}
+

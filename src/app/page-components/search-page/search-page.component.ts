@@ -23,6 +23,11 @@ export class SearchPageComponent implements OnInit {
     this.setupForm();
   }
 
+  public search(): void {
+    const searchTerm: string = this.searchPageForm.controls.search.value;
+    this.facade.searchPeople({searchTerm});
+  }
+
   private setupForm(): void {
     this.searchPageForm = new FormGroup({
       search: new FormControl('')

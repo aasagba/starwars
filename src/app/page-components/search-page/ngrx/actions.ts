@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { IPeopleResponse } from '../../../api/swapi.interface';
+import { IPeopleResponse, ISearchParams } from '../../../api/swapi.interface';
 
 export enum SearchActionTypes {
   SEARCH_PEOPLE = '[People] Search people',
@@ -9,6 +9,8 @@ export enum SearchActionTypes {
 
 export class SearchPeopleAction implements Action {
   public readonly type = SearchActionTypes.SEARCH_PEOPLE;
+
+  constructor(public payload: ISearchParams) {}
 }
 
 export class SearchPeopleSuccessAction implements Action {

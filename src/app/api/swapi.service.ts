@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { environment } from '../../environments/environment';
 import { Observable, of } from 'rxjs';
-import { IPeopleResponse } from './swapi.interface';
+import { IPeopleResponse, ISearchParams } from './swapi.interface';
 import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
@@ -13,10 +13,16 @@ export class SwapiService {
 
   constructor(private httpClient: HttpClient){}
 
-  public getStarWarsPeople(): Observable<IPeopleResponse | Error> {
+  public getStarWarsPeople(searchParams: ISearchParams): Observable<IPeopleResponse | Error> {
+
+    let params: HttpParams = new HttpParams();
+
+    if (searchParams && searchParams.searchTerm) {
+      params = params.append('search', searchParams.searchTerm);
+    }
 
     return this.httpClient
-      .get(`${environment.baseUrl}/people`)
+      .get(`${environment.baseUrl}/people`, { params })
       .pipe(map((response: IPeopleResponse) => response),
         catchError((error: Error) => of(new Error(error.message)))
       );

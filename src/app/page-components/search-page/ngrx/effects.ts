@@ -20,7 +20,7 @@ export class SearchPeopleEffect {
   public searchPeople$: Observable<Action> = this.actions$.pipe(
     ofType(SearchActionTypes.SEARCH_PEOPLE),
     switchMap((action: SearchPeopleAction) => {
-      return this.service.getStarWarsPeople().pipe(
+      return this.service.getStarWarsPeople(action.payload).pipe(
         map((people: IPeopleResponse) =>
           new SearchPeopleSuccessAction(people)),
         catchError((error: Error) => of(
