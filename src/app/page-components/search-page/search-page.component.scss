@@ -8,6 +8,17 @@
     flex-direction: column;
   }
 
+  .logo {
+    background-image: url("../../../assets/images/star-wars.png");
+    display: block;
+    top: 50%;
+    width: 203px;
+    height: 88px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .clr-form {
     .search {
       margin-bottom: 34px;
@@ -19,6 +30,7 @@
           width: 8rem;
           color: black;
           text-align: center;
+          color: white;
         }
       }
     }
