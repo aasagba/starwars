@@ -9,8 +9,9 @@ import { environment } from '../environments/environment';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
-import { reducers, metaReducers } from './reducers';
+import { reducers, metaReducers, rootEffects } from './reducers';
 import { SearchPageModule } from './page-components/search-page/search-page.module';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,9 @@ import { SearchPageModule } from './page-components/search-page/search-page.modu
     SearchPageModule,
     ClarityModule,
     BrowserAnimationsModule,
-    ClarityModule,
-    BrowserAnimationsModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
-    StoreModule.forRoot(reducers, { metaReducers })
+    StoreModule.forRoot(reducers, { metaReducers }),
+    EffectsModule.forRoot(rootEffects)
   ],
   providers: [],
   bootstrap: [AppComponent]

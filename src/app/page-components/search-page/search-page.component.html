@@ -20,5 +20,11 @@
     </div>
   </div>
 
+  <div *ngFor="let people of (people$ | async)">
+    <p>{{people.name}}</p>
+  </div>
+
+  <div>total: {{}}</div>
+
 </form>
 
