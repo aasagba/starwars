@@ -41,7 +41,7 @@ describe('SwapiService', () => {
   describe('getStarWarsPeople', () => {
     it('should construct url and call getStarWarsPeople', () => {
       const { mockBackend, service } = setup();
-      const endpoint: string = 'https://swapi.co/api/mockPeople';
+      const endpoint: string = 'https://swapi.co/api/people';
       const expectedResult: IPeopleResponse = swapiPeopleMock;
       let actualResult: IPeopleResponse = null;
 
@@ -50,12 +50,11 @@ describe('SwapiService', () => {
 
       mockBackend.expectOne(endpoint).flush(swapiPeopleMock);
       expect(actualResult).toEqual(expectedResult);
-
     });
 
     it('should be able to set search param', () => {
       const { mockBackend, service } = setup();
-      const endpoint: string = 'https://swapi.co/api/mockPeople?search=r2';
+      const endpoint: string = 'https://swapi.co/api/people?search=r2';
       const expectedResult: IPeopleResponse = swapiPeopleMock;
       let actualResult: IPeopleResponse = null;
 
@@ -63,12 +62,12 @@ describe('SwapiService', () => {
         .subscribe((data: IPeopleResponse) => actualResult = data);
 
       mockBackend.expectOne(endpoint).flush(swapiPeopleMock);
-
+      expect(actualResult).toEqual(expectedResult);
     });
 
     it('should be able to set page param', () => {
       const { mockBackend, service } = setup();
-      const endpoint: string = 'https://swapi.co/api/mockPeople?page=2';
+      const endpoint: string = 'https://swapi.co/api/people?page=2';
       const expectedResult: IPeopleResponse = swapiPeopleMock;
       let actualResult: IPeopleResponse = null;
 
@@ -76,6 +75,7 @@ describe('SwapiService', () => {
         .subscribe((data: IPeopleResponse) => actualResult = data);
 
       mockBackend.expectOne(endpoint).flush(swapiPeopleMock);
+      expect(actualResult).toEqual(expectedResult);
     });
 
   });
