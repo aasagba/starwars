@@ -20,14 +20,16 @@ export function searchReducer(
       return {
         ...state,
         isLoading: false,
-        people: (action as SearchPeopleSuccessAction).payload.results
+        people: (action as SearchPeopleSuccessAction).payload.results,
+        count: (action as SearchPeopleSuccessAction).payload.count
       };
     }
 
     case SearchActionTypes.SEARCH_PEOPLE_FAILURE: {
       return {
         ...state,
-        isLoading: false
+        isLoading: false,
+        count: 0
       }
     }
 

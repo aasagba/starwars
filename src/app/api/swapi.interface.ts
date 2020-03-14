@@ -25,6 +25,7 @@ export interface IPeople {
 }
 
 export interface ISearchParams {
-  searchTerm?: string
+  searchTerm?: string,
+  page?: string
 }
 

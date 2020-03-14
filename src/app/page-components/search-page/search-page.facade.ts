@@ -10,13 +10,15 @@ import { SearchSelectors } from './ngrx/selectors';
 export class SearchPageFacade {
   public isLoading$: Observable<boolean>;
   public people$: Observable<Array<IPeople>>;
+  public count$: Observable<number>;
 
   constructor(private store: Store<State>) {
     this.isLoading$ = this.store.select(SearchSelectors.isLoading);
     this.people$ = this.store.select(SearchSelectors.people);
+    this.count$ = this.store.select(SearchSelectors.count);
   }
 
   public searchPeople(searchParams?: ISearchParams): void {
-    this.store.dispatch(new SearchPeopleAction(searchParams))
+    this.store.dispatch(new SearchPeopleAction(searchParams));
   }
 }

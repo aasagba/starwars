@@ -22,7 +22,8 @@
 
 </form>
 
-<clr-datagrid [clrDgLoading]="(isLoading$ | async)">
+<clr-datagrid [clrDgLoading]="(isLoading$ | async)"
+              (clrDgRefresh)="refresh($event)">
 
   <clr-dg-placeholder
     [hidden]="(people$ | async)?.length !== 0">
@@ -42,8 +43,7 @@
   <clr-dg-column>Vehicles</clr-dg-column>
   <clr-dg-column>Starships</clr-dg-column>
 
-  <clr-dg-row *ngFor="let person of (people$ | async); index as i;"
-  >
+  <clr-dg-row *ngFor="let person of (people$ | async); index as i;">
     <clr-dg-cell>{{ person.name }}</clr-dg-cell>
     <clr-dg-cell>{{ person.height }}</clr-dg-cell>
     <clr-dg-cell>{{ person.mass }}</clr-dg-cell>
@@ -57,6 +57,14 @@
     <clr-dg-cell>{{ person.vehicles }}</clr-dg-cell>
     <clr-dg-cell>{{ person.starships }}</clr-dg-cell>
   </clr-dg-row>
+
+  <clr-dg-footer>
+    <clr-dg-pagination #pagination [clrDgPageSize]="10" [clrDgTotalItems]="total$ | async">
+      <clr-dg-page-size [clrPageSizeOptions]="[10]">People per page</clr-dg-page-size>
+      {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+      of {{pagination.totalItems}} People
+    </clr-dg-pagination>
+  </clr-dg-footer>
 
 </clr-datagrid>
 

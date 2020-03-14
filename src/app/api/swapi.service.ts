@@ -21,6 +21,10 @@ export class SwapiService {
       params = params.append('search', searchParams.searchTerm);
     }
 
+    if (searchParams && searchParams.page) {
+      params = params.append('page', searchParams.page);
+    }
+
     return this.httpClient
       .get(`${environment.baseUrl}/people`, { params })
       .pipe(map((response: IPeopleResponse) => response),

@@ -20,4 +20,9 @@ export class SearchSelectors {
     (state: ISearchState) => state.people
   );
 
+  public static count: MemoizedSelector<State, number> = createSelector(
+    searchState,
+    (state: ISearchState) => state.count
+  );
+
 }
