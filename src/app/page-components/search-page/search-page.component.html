@@ -1,4 +1,3 @@
-
 <form
   [formGroup]="searchPageForm"
   class="clr-form">
@@ -20,11 +19,43 @@
     </div>
   </div>
 
-  <div *ngFor="let people of (people$ | async)">
-    <p>{{people.name}}</p>
-  </div>
-
-  <div>total: {{}}</div>
-
 </form>
+
+<clr-datagrid [clrDgLoading]="(isLoading$ | async)">
+
+  <clr-dg-placeholder
+    [hidden]="(people$ | async)?.length !== 0">
+    <span>No Items to display</span>
+  </clr-dg-placeholder>
+
+  <clr-dg-column>Name</clr-dg-column>
+  <clr-dg-column>Height</clr-dg-column>
+  <clr-dg-column>Mass</clr-dg-column>
+  <clr-dg-column>Hair Colour</clr-dg-column>
+  <clr-dg-column>Eye Colour</clr-dg-column>
+  <clr-dg-column>Birth Year</clr-dg-column>
+  <clr-dg-column>Gender</clr-dg-column>
+  <clr-dg-column>Homeworld</clr-dg-column>
+  <clr-dg-column>Films</clr-dg-column>
+  <clr-dg-column>Species</clr-dg-column>
+  <clr-dg-column>Vehicles</clr-dg-column>
+  <clr-dg-column>Starships</clr-dg-column>
+
+  <clr-dg-row *ngFor="let person of (people$ | async); index as i;"
+  >
+    <clr-dg-cell>{{ person.name }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.height }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.mass }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.hair_color }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.eye_color }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.birth_year }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.gender }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.homeworld }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.films }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.species }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.vehicles }}</clr-dg-cell>
+    <clr-dg-cell>{{ person.starships }}</clr-dg-cell>
+  </clr-dg-row>
+
+</clr-datagrid>
 
