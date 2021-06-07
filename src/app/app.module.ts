@@ -12,10 +12,16 @@ import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers, rootEffects } from './reducers';
 import { SearchPageModule } from './page-components/search-page/search-page.module';
 import { EffectsModule } from '@ngrx/effects';
+import { RouterModule } from '@angular/router';
+import { SearchPageComponent } from './page-components/search-page/search-page.component';
+
+export const routes = [
+  { path: 'search/:term',  component: SearchPageComponent }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     CommonModule,
@@ -26,7 +32,10 @@ import { EffectsModule } from '@ngrx/effects';
     BrowserAnimationsModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     StoreModule.forRoot(reducers, { metaReducers }),
-    EffectsModule.forRoot(rootEffects)
+    EffectsModule.forRoot(rootEffects),
+    RouterModule.forRoot(
+      routes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

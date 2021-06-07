@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchPageFacade } from './search-page.facade';
 import { SearchPeopleEffect } from './ngrx/effects';
 import { EffectsModule } from '@ngrx/effects';
+import { SearchModule } from '../../shared-components/search/search.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { EffectsModule } from '@ngrx/effects';
     CommonModule,
     ClarityModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    SearchModule
   ],
   declarations: [
     SearchPageComponent

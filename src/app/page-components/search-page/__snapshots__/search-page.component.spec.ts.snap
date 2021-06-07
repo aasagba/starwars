@@ -8,48 +8,50 @@ exports[`SearchPageComponent search should update datagrid with search results 1
     class="clr-form ng-untouched ng-pristine ng-valid"
     novalidate=""
   >
-    <div
-      class="clr-row"
-    >
+    <app-search>
       <div
-        class="clr-col-12"
+        class="clr-row"
       >
         <div
-          class="search-wrapper"
+          class="clr-col-12"
         >
           <div
-            class="logo"
-          />
-          <clr-input-container
-            class="search clr-form-control"
+            class="search-wrapper ng-untouched ng-pristine ng-valid"
           >
-            
             <div
-              class="clr-control-container clr-input"
+              class="logo"
+            />
+            <clr-input-container
+              class="search clr-form-control"
             >
+              
               <div
-                class="clr-input-wrapper"
+                class="clr-control-container clr-input"
               >
-                <input
-                  aria-describedby="search-helper"
-                  class="clr-input ng-untouched ng-pristine ng-valid"
-                  clrinput=""
-                  formcontrolname="search"
-                  id="search"
-                  name="search"
-                  placeholder="Search People"
-                  type="search"
-                />
+                <div
+                  class="clr-input-wrapper"
+                >
+                  <input
+                    aria-describedby="search-helper"
+                    class="clr-input ng-untouched ng-pristine ng-valid"
+                    clrinput=""
+                    formcontrolname="search"
+                    id="search"
+                    name="search"
+                    placeholder="Search People"
+                    type="search"
+                  />
+                  
+                </div>
+                
+                
                 
               </div>
-              
-              
-              
-            </div>
-          </clr-input-container>
+            </clr-input-container>
+          </div>
         </div>
       </div>
-    </div>
+    </app-search>
   </form>
   <clr-datagrid
     class="datagrid-host"

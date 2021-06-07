@@ -8,6 +8,7 @@ import { mockPeople } from '../../../../test/mock/api/swapi-mock';
 import { ClarityModule, ClrDatagrid, ClrDatagridStateInterface } from '@clr/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
+import { SearchModule } from '../../shared-components/search/search.module';
 
 describe('SearchPageComponent', () => {
   const isLoading$: BehaviorSubject<boolean> = new BehaviorSubject(false);
@@ -24,6 +25,7 @@ describe('SearchPageComponent', () => {
       imports: [
         ClarityModule,
         ReactiveFormsModule,
+        SearchModule,
         FormsModule
       ],
       providers: [
@@ -78,16 +80,19 @@ describe('SearchPageComponent', () => {
     it('it should call search on facade', () => {
       jest.spyOn(facade, 'searchPeople');
 
-      component.searchPageForm.controls.search.setValue('Han Solo');
-      component.search();
+      component.search('Han Solo');
       expect(facade.searchPeople).toHaveBeenCalledWith({ searchTerm: 'Han Solo' });
     });
 
     it('should update datagrid with search results', () => {
-      component.searchPageForm.controls.search.setValue('luke');
-      component.search();
+      component.search('luke');
 
       expect(fixture.nativeElement).toMatchSnapshot();
+    });
+
+    it('should reset pagination currentPage', () => {
+      component.search('luke');
+      expect(component.pagination.currentPage === 1);
     });
   });
 

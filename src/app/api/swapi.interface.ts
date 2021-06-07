@@ -1,6 +1,6 @@
 export interface IPeopleResponse {
-  count: number,
-  next: string,
+  count: number;
+  next: string;
   previous: string,
   results: Array<IPeople>
 }

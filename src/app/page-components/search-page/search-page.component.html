@@ -1,31 +1,10 @@
-<form
-  [formGroup]="searchPageForm"
-  class="clr-form">
-
-  <div class="clr-row">
-    <div class="clr-col-12">
-      <div class="search-wrapper">
-        <div class="logo"></div>
-
-        <clr-input-container class="search">
-          <input
-            clrInput
-            class="clr-input"
-            type="search"
-            id="search"
-            name="search"
-            formControlName="search"
-            placeholder="Search People"
-            (search)="search()" />
-        </clr-input-container>
-      </div>
-    </div>
-  </div>
-
+<form [formGroup]="searchPageForm"
+      class="clr-form">
+  <app-search (searchEvent)="search($event)" [searchTerm]="searchTerm"></app-search>
 </form>
 
 <clr-datagrid [clrDgLoading]="(isLoading$ | async)"
-              (clrDgRefresh)="refresh($event)">
+              (clrDgRefresh)="refresh($event)" >
 
   <clr-dg-placeholder
     [hidden]="(people$ | async)?.length !== 0">
